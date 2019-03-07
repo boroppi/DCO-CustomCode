@@ -2,18 +2,21 @@ function TestLoad() {
   console.log("CustomScript file loaded");
 }
 
-// Add event listener to wrapper-for-linkButtons css class
+// Add event listener to all a elements with onmousehover attribute contains openCalloutContent value
 (function() {
+  //get the a elements
   let aLinks = document.querySelectorAll(
     'a[onmousehover*="openCalloutContent"]'
   );
-
+  // loop through them and add an event listener for mouseup event
   aLinks.forEach(aLink => {
     aLink.addEventListener("mouseup", handleMouseUp);
     console.log(aLink);
   });
 })();
 
+// this function is called when mouseup event is triggered for a elements
+// It then runs the function that toggles the display for mega menu content for that specific a element
 function handleMouseUp(event) {
   console.log(event.target);
   let parent = getClosest(event.target, ".dropdown-content");
@@ -26,17 +29,19 @@ function handleMouseUp(event) {
  * @param element
  */
 function toggleElementDisplay(element) {
+  // The first setTimeout method will run first and the next one after that
+  // to bring back the mega menu content
   setTimeout(() => {
     element.style.display === "none"
       ? (element.style.display = "")
       : (element.style.display = "none");
-  }, 100);
+  }, 75);
 
   setTimeout(() => {
     element.style.display === "none"
       ? (element.style.display = "")
       : (element.style.display = "none");
-  }, 150);
+  }, 200);
 }
 
 /**
