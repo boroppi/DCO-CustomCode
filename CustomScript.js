@@ -9,7 +9,7 @@ function TestLoad() {
   );
 
   aLinks.forEach(aLink => {
-    aLink.addEventListener("mouseup", handleMouseDown);
+    aLink.addEventListener("mouseup", handleMouseUp);
     console.log(aLink);
   });
 })();
