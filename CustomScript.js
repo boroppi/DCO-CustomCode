@@ -6,7 +6,7 @@ function TestLoad() {
 (function() {
   //get the a elements
   let aLinks = document.querySelectorAll(
-    'a[onmousehover*="openCalloutContent"]'
+    'a[onmouseover*="openCalloutContent"]'
   );
   // loop through them and add an event listener for mouseup event
   aLinks.forEach(aLink => {
