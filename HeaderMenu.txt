@@ -4,12 +4,13 @@
       display: none;
     }
   }
+
   .navbar {
     overflow: hidden;
     background-color: #000047;
   }
 
-  .navbar > a {
+  .navbar>a {
     float: left;
     font-size: 1.2rem;
     color: white;
@@ -41,7 +42,7 @@
     font-weight: normal;
   }
 
-  .navbar > a:hover,
+  .navbar>a:hover,
   .dropdown:hover .dropbtn {
     background-color: rgba(155, 155, 155, 0.5);
   }
@@ -67,45 +68,56 @@
   .dropdown:hover .dropdown-content {
     display: block;
   }
+
   #dcoBannerContainer {
     padding-left: 4rem;
   }
+
   #dcoBannerContainer.dcoBannerThin {
     padding-left: 1.5rem;
     padding-bottom: 0.75rem;
   }
+
   #dcoLogo {
     /*width:325px;*/
     width: 210px;
     padding-top: 0.5rem;
     padding-right: 15px;
   }
+
   div.dcoBannerThin #dcoLogo {
     float: left;
   }
+
   #dcoLogo img {
     width: 210px;
   }
+
   .submenuContent {
     height: 300px;
     padding-left: 2rem !important;
     color: #000047;
   }
+
   .submenuContent h2 {
     font-size: 1.4rem;
   }
+
   .submenuContent h3 {
     margin-bottom: -10px;
     font-size: 1.2rem;
   }
+
   .submenuContent ul {
     padding: 5px;
     list-style-type: none;
   }
+
   .submenuContent ul li {
     margin-bottom: 5px;
     margin-left: 4px;
   }
+
   .submenuCallout {
     background-color: #000047;
     color: #ffffff;
@@ -143,12 +155,8 @@
 <div id="dcoBannerContainer" class="dcoBannerThin">
   <div class="navbar">
     <div id="dcoLogo">
-      <a href="<sitecollection>"
-        ><img
-          src="<sitecollection>/CustomCode/Images/insideDCO%20-%20white.png"
-          alt="Inside DCO Logo"
-          style="width: 100%;"
-      /></a>
+      <a href="<sitecollection>"><img src="<sitecollection>/CustomCode/Images/insideDCO%20-%20white.png" alt="Inside DCO Logo"
+          style="width: 100%;" /></a>
     </div>
     <div>&nbsp;</div>
     <div class="dropdown">
@@ -164,18 +172,12 @@
                   <h3>News & Events</h3>
                   <ul onmouseout="closeCalloutContents()">
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/News-and-Announcements.aspx"
-                        onmouseover="openCalloutContent(event, 'LatestNewsHov')"
-                        >Latest News</a
-                      >
+                      <a href="<sitecollection>/SitePages/News-and-Announcements.aspx" onmouseover="openCalloutContent(event, 'LatestNewsHov')">Latest
+                        News</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/_layouts/15/Events.aspx?ListGuid=221d24e2-f61b-4566-bbdd-d81f95bec7e6"
-                        onmouseover="openCalloutContent(event, 'UpEventsHov')"
-                        >Upcoming Events</a
-                      >
+                      <a href="<sitecollection>/_layouts/15/Events.aspx?ListGuid=221d24e2-f61b-4566-bbdd-d81f95bec7e6"
+                        onmouseover="openCalloutContent(event, 'UpEventsHov')">Upcoming Events</a>
                     </li>
                   </ul>
                 </div>
@@ -183,32 +185,19 @@
                   <h3>Communications</h3>
                   <ul onmouseout="closeCalloutContents()">
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/Directors-Message-All.aspx"
-                        onmouseover="openCalloutContent(event, 'DirMsgHov')"
-                        >Director's Message</a
-                      >
+                      <a href="<sitecollection>/SitePages/Directors-Message-All.aspx" onmouseover="openCalloutContent(event, 'DirMsgHov')">Director's
+                        Message</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/DCO-Download-All.aspx"
-                        onmouseover="openCalloutContent(event, 'NewsLettersHov')"
-                        >DCO Download</a
-                      >
+                      <a href="<sitecollection>/SitePages/DCO-Download-All.aspx" onmouseover="openCalloutContent(event, 'NewsLettersHov')">DCO
+                        Download</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/Spotlight.aspx"
-                        onmouseover="openCalloutContent(event, 'SpotlightHov')"
-                        >Spotlight</a
-                      >
+                      <a href="<sitecollection>/SitePages/Spotlight.aspx" onmouseover="openCalloutContent(event, 'SpotlightHov')">Spotlight</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/Shout-Outs-All.aspx"
-                        onmouseover="openCalloutContent(event, 'ShoutOutsHov')"
-                        >Shout Outs</a
-                      >
+                      <a href="<sitecollection>/SitePages/Shout-Outs-All.aspx" onmouseover="openCalloutContent(event, 'ShoutOutsHov')">Shout
+                        Outs</a>
                     </li>
                   </ul>
                 </div>
@@ -272,32 +261,20 @@
                   <h3>Business Units</h3>
                   <ul onmouseout="closeCalloutContents()">
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/ProductManagement.aspx"
-                        onmouseover="openCalloutContent(event, 'ProductMgmtHov')"
-                        >Product Management</a
-                      >
+                      <a href="<sitecollection>/SitePages/ProductManagement.aspx" onmouseover="openCalloutContent(event, 'ProductMgmtHov')">Product
+                        Management</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/BS.aspx"
-                        onmouseover="openCalloutContent(event, 'BSHov')"
-                        >Business Services</a
-                      >
+                      <a href="<sitecollection>/SitePages/BS.aspx" onmouseover="openCalloutContent(event, 'BSHov')">Business
+                        Services</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/PTA.aspx"
-                        onmouseover="openCalloutContent(event, 'PTAHov')"
-                        >Process Tools and Automation</a
-                      >
+                      <a href="<sitecollection>/SitePages/PTA.aspx" onmouseover="openCalloutContent(event, 'PTAHov')">Process
+                        Tools and Automation</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/SDM.aspx"
-                        onmouseover="openCalloutContent(event, 'SDHov')"
-                        >Service Delivery Management</a
-                      >
+                      <a href="<sitecollection>/SitePages/SDM.aspx" onmouseover="openCalloutContent(event, 'SDHov')">Service
+                        Delivery Management</a>
                     </li>
                   </ul>
                 </div>
@@ -305,25 +282,15 @@
                   <h3>Branch Admin</h3>
                   <ul onmouseout="closeCalloutContents()">
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/Policies-and-Procedures.aspx"
-                        onmouseover="openCalloutContent(event, 'PPHov')"
-                        >Policies and Procedures</a
-                      >
+                      <a href="<sitecollection>/SitePages/Policies-and-Procedures.aspx" onmouseover="openCalloutContent(event, 'PPHov')">Policies
+                        and Procedures</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/Forms.aspx"
-                        onmouseover="openCalloutContent(event, 'FormsHov')"
-                        >Forms</a
-                      >
+                      <a href="<sitecollection>/SitePages/Forms.aspx" onmouseover="openCalloutContent(event, 'FormsHov')">Forms</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/Human-Resources.aspx"
-                        onmouseover="openCalloutContent(event, 'HRHov')"
-                        >Human Resources</a
-                      >
+                      <a href="<sitecollection>/SitePages/Human-Resources.aspx" onmouseover="openCalloutContent(event, 'HRHov')">Human
+                        Resources</a>
                     </li>
                   </ul>
                 </div>
@@ -386,11 +353,8 @@
               <h3>Reports</h3>
               <ul onmouseout="closeCalloutContents()">
                 <li>
-                  <a
-                    href="<sitecollection>/SitePages/Reports.aspx"
-                    onmouseover="openCalloutContent(event, 'PowerBIReportHov')"
-                    >Power BI Reports</a
-                  >
+                  <a href="<sitecollection>/SitePages/Reports.aspx" onmouseover="openCalloutContent(event, 'PowerBIReportHov')">Power
+                    BI Reports</a>
                 </li>
               </ul>
             </div>
@@ -417,11 +381,7 @@
                   <h3>Learning and Development</h3>
                   <ul onmouseout="closeCalloutContents()">
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/Learning-Development-All.aspx"
-                        onmouseover="openCalloutContent(event, 'LandDAllHov')"
-                        >Newsletter</a
-                      >
+                      <a href="<sitecollection>/SitePages/Learning-Development-All.aspx" onmouseover="openCalloutContent(event, 'LandDAllHov')">Newsletter</a>
                     </li>
                   </ul>
                 </div>
@@ -456,18 +416,12 @@
                   <h3>Employee Engagement</h3>
                   <ul onmouseout="closeCalloutContents()">
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/2018-OPS-Employee-Experience-Survey.aspx"
-                        onmouseover="openCalloutContent(event, 'OPSEmpExpHov')"
-                        >OPS Employee Experience Survey</a
-                      >
+                      <a href="<sitecollection>/SitePages/2018-OPS-Employee-Experience-Survey.aspx" onmouseover="openCalloutContent(event, 'OPSEmpExpHov')">OPS
+                        Employee Experience Survey</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/DCO-Connect--Intel-Session.aspx"
-                        onmouseover="openCalloutContent(event, 'ConnectIntelHov')"
-                        >DCO Connect: Intel Sessions</a
-                      >
+                      <a href="<sitecollection>/SitePages/DCO-Connect--Intel-Session.aspx" onmouseover="openCalloutContent(event, 'ConnectIntelHov')">DCO
+                        Connect: Intel Sessions</a>
                     </li>
                   </ul>
                 </div>
@@ -475,19 +429,11 @@
                   <h3>Tools</h3>
                   <ul onmouseout="closeCalloutContents()">
                     <li>
-                      <a
-                        href="https://staffhub.office.com"
-                        target="_blank"
-                        onmouseover="openCalloutContent(event, 'StaffHubHov')"
-                        >StaffHub</a
-                      >
+                      <a href="https://staffhub.office.com" target="_blank" onmouseover="openCalloutContent(event, 'StaffHubHov')">StaffHub</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/My-Board.aspx"
-                        onmouseover="openCalloutContent(event, 'MyBoardHov')"
-                        >My Board</a
-                      >
+                      <a href="<sitecollection>/SitePages/My-Board.aspx" onmouseover="openCalloutContent(event, 'MyBoardHov')">My
+                        Board</a>
                     </li>
                   </ul>
                 </div>
@@ -535,25 +481,15 @@
                   <h3>DCO</h3>
                   <ul onmouseout="closeCalloutContents()">
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/about-us.aspx"
-                        onmouseover="openCalloutContent(event, 'AboutUsHov')"
-                        >About Us</a
-                      >
+                      <a href="<sitecollection>/SitePages/about-us.aspx" onmouseover="openCalloutContent(event, 'AboutUsHov')">About
+                        Us</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/locations.aspx"
-                        onmouseover="openCalloutContent(event, 'LocationsHov')"
-                        >Locations</a
-                      >
+                      <a href="<sitecollection>/SitePages/locations.aspx" onmouseover="openCalloutContent(event, 'LocationsHov')">Locations</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/org-chart.aspx"
-                        onmouseover="openCalloutContent(event, 'OrgChartHov')"
-                        >Org Chart</a
-                      >
+                      <a href="<sitecollection>/SitePages/org-chart.aspx" onmouseover="openCalloutContent(event, 'OrgChartHov')">Org
+                        Chart</a>
                     </li>
                   </ul>
                 </div>
@@ -561,25 +497,14 @@
                   <h3>Support</h3>
                   <ul onmouseout="closeCalloutContents()">
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/how-do-i.aspx"
-                        onmouseover="openCalloutContent(event, 'HowDoIHov')"
-                        >FAQ</a
-                      >
+                      <a href="<sitecollection>/SitePages/how-do-i.aspx" onmouseover="openCalloutContent(event, 'HowDoIHov')">FAQ</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/helpful-links.aspx"
-                        onmouseover="openCalloutContent(event, 'HelpLinksHov')"
-                        >Helpful Links</a
-                      >
+                      <a href="<sitecollection>/SitePages/helpful-links.aspx" onmouseover="openCalloutContent(event, 'HelpLinksHov')">Helpful
+                        Links</a>
                     </li>
                     <li>
-                      <a
-                        href="<sitecollection>/SitePages/feedback.aspx"
-                        onmouseover="openCalloutContent(event, 'FeedbackHov')"
-                        >Feedback</a
-                      >
+                      <a href="<sitecollection>/SitePages/feedback.aspx" onmouseover="openCalloutContent(event, 'FeedbackHov')">Feedback</a>
                     </li>
                   </ul>
                 </div>
