@@ -3,7 +3,7 @@ function TestLoad() {
 }
 
 // Add event listener to all a elements with onmousehover attribute contains openCalloutContent value
-(function () {
+(function() {
   //get the a elements
   let aLinks = document.querySelectorAll(
     'a[onmouseover*="openCalloutContent"]'
@@ -11,7 +11,6 @@ function TestLoad() {
   // loop through them and add an event listener for mouseup event
   aLinks.forEach(aLink => {
     aLink.addEventListener("mouseup", handleMouseUp);
-    console.log(aLink);
   });
 })();
 
@@ -49,7 +48,7 @@ function toggleElementDisplay(element) {
  * @param elem
  * @param selector
  */
-var getClosest = function (elem, selector) {
+var getClosest = function(elem, selector) {
   // Element.matches() polyfill for
   // For Browser support
   if (!Element.prototype.matches) {
@@ -59,10 +58,10 @@ var getClosest = function (elem, selector) {
       Element.prototype.msMatchesSelector ||
       Element.prototype.oMatchesSelector ||
       Element.prototype.webkitMatchesSelector ||
-      function (s) {
+      function(s) {
         var matches = (this.document || this.ownerDocument).querySelectorAll(s),
           i = matches.length;
-        while (--i >= 0 && matches.item(i) !== this) { }
+        while (--i >= 0 && matches.item(i) !== this) {}
         return i > -1;
       };
   }

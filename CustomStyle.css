@@ -13,9 +13,125 @@ div.ms-compositeHeader-full {
   display: none;
 }
 /* new header row */
+/*div.mainRow-43 {
+  display: none;
+} */
+
+/* SEARCH BOX PLACEMENT INSIDE THE NAVBAR */
+
+.active_1896fea5 .input_1896fea5::-webkit-input-placeholder {
+  color: gray !important;
+}
+.active_1896fea5 .input_1896fea5::-moz-placeholder {
+  color: gray !important;
+}
+.active_1896fea5 .input_1896fea5::-ms-input-placeholder {
+  color: gray !important;
+}
+.active_1896fea5 .input_1896fea5::placeholder {
+  color: gray !important;
+}
+
+.inactive_1896fea5 .input_1896fea5::-webkit-input-placeholder {
+  color: white !important;
+}
+.inactive_1896fea5 .input_1896fea5::-moz-placeholder {
+  color: white !important;
+}
+.inactive_1896fea5 .input_1896fea5::-ms-input-placeholder {
+  color: white !important;
+}
+.inactive_1896fea5 .input_1896fea5::placeholder {
+  color: white !important;
+}
+
+div.searchBox_1896fea5.inactive_1896fea5 span[class*="icon_"] {
+  fill: white;
+}
+div.searchBox_1896fea5.active_1896fea5 span[class*="icon_"] {
+  fill: #03004a;
+}
+div.searchBox_1896fea5.active_1896fea5 span[class*="ms-searchux"] {
+  fill: w#03004a;
+}
+
+div.searchBox_1896fea5.inactive_1896fea5 {
+  background: transparent;
+  border: none;
+  color: white;
+  width: 175px;
+}
+
+div.searchBox_1896fea5.active_1896fea5 {
+  background: #f4f4f4;
+  border: 1px solid #eaeaea;
+  color: #03004a;
+}
+
+@media (max-width: 1366px) {
+  input.input_1896fea5.inactive_1896fea5 {
+    max-width: 0;
+  }
+  input.input_1896fea5.active_1896fea5 {
+    width: 100%;
+  }
+  div.searchBox_1896fea5.inactive_1896fea5 {
+    width: 50px;
+  }
+}
+
+@media (min-width: 1100px) {
+  div[class^="searchCell"] {
+    position: fixed;
+    z-index: 2;
+    right: 5px;
+    top: 72px;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1099px) {
+  div[class^="searchCell"] {
+    position: fixed;
+    z-index: 5;
+    left: 300px;
+    top: 4px;
+  }
+}
+
+@media (min-width: 690px) and (max-width: 1023px) {
+  div[class^="searchCell"] {
+    position: fixed;
+    z-index: 5;
+    left: 150px;
+    top: 4px;
+  }
+}
+
+@media (max-width: 689px) {
+  /* div[class^="searchCell"] {
+    position: fixed;
+    z-index: 5;
+    right: 10px;
+    top: 65px;
+  } */
+  div[class^="mainRow-"] {
+    display: none;
+  }
+}
+
 div.mainRow-43 {
+  height: 0px;
+}
+
+div[class^="logoCell"],
+div[class^="titleAndNavWrapper"],
+div[class^="facepileCell"],
+div[class^="actionsSubcell"] {
   display: none;
 }
+
+/* END OF SEARCH BOX PLACEMENT INSIDE THE NAVBAR */
+
 .xlg .od-TopBar-header,
 .xxlg .od-TopBar-header,
 .xxxlg .od-TopBar-header,
