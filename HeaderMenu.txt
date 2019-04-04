@@ -1,158 +1,4 @@
-<style type="text/css">
-  @media (max-width: 1023px) {
-    #dcoBannerContainer {
-      display: none;
-    }
-  }
 
- 
-  .navbar {
-    overflow: hidden;
-    background-color: #000047;
-  }
-
-  .navbar > a {
-    float: left;
-    font-size: 1.2rem;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-weight: 600;
-  }
-
-  .dropdown {
-    float: left;
-    overflow: hidden;
-  }
-
-  .dropdown .dropbtn {
-    font-size: 1.2rem;
-    font-family: inherit;
-    border: none;
-    outline: none;
-    color: white;
-    padding: 14px 16px;
-    background-color: #000047;
-    margin: 0;
-    font-weight: 600;
-  }
-
-  .dcoBannerThin .dropdown .dropbtn {
-    font-size: 1.1rem;
-    font-weight: normal;
-  }
-
-  .navbar > a:hover,
-  .dropdown:hover .dropbtn {
-    background-color: rgba(155, 155, 155, 0.5);
-  }
-
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    color: #000047;
-    background-color: #f9f9f9;
-    width: 100%;
-    left: 0;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-  }
-
-  .dropdown-content a,
-  .dropdown-content a:visited {
-    color: #000047;
-    text-decoration: none;
-    font-size: 1rem;
-  }
-
-  .dropdown:hover .dropdown-content {
-    display: block;
-  }
-
-  #dcoBannerContainer {
-    padding-left: 4rem;
-  }
-
-  #dcoBannerContainer.dcoBannerThin {
-    padding-left: 1.5rem;
-    padding-bottom: 0.75rem;
-  }
-
-  #dcoLogo {
-    /*width:325px;*/
-    width: 210px;
-    padding-top: 0.5rem;
-    padding-right: 15px;
-  }
-
-  div.dcoBannerThin #dcoLogo {
-    float: left;
-  }
-
-  #dcoLogo img {
-    width: 210px;
-  }
-
-  .submenuContent {
-    height: 300px;
-    padding-left: 2rem !important;
-    color: #000047;
-  }
-
-  .submenuContent h2 {
-    font-size: 1.4rem;
-  }
-
-  .submenuContent h3 {
-    margin-bottom: -10px;
-    font-size: 1.2rem;
-  }
-
-  .submenuContent ul {
-    padding: 5px;
-    list-style-type: none;
-  }
-
-  .submenuContent ul li {
-    margin-bottom: 5px;
-    margin-left: 4px;
-  }
-
-  .submenuCallout {
-    background-color: #000047;
-    color: #ffffff;
-    height: 300px;
-    padding: 1.5rem;
-    display: table;
-  }
-
-  .left-arrow:after {
-    content: "";
-    display: block;
-    position: absolute;
-    right: 100%;
-    top: 50%;
-    margin-top: -20px;
-    width: 0;
-    height: 0;
-    border-top: 20px solid transparent;
-    border-right: 30px solid #000047;
-    border-bottom: 20px solid transparent;
-    border-left: 30px solid transparent;
-  }
-
-  .submenuCalloutContent {
-    display: table-cell;
-    vertical-align: middle;
-    float: left;
-    padding: 0px 4rem;
-    width: 70%;
-    height: 200px;
-    display: none;
-    font-size: 1.1rem;
-  }
-</style>
 <div id="dcoBannerContainer" class="dcoBannerThin">
   <div class="navbar">
     <div id="dcoLogo">
@@ -231,29 +77,26 @@
               <div id="LatestNewsHov" class="submenuCalloutContent">
                 <h3>Latest News</h3>
                 <p>
-                  Check out DCO’s latest news here. The DCO Download features
-                  all the great work being done by our teams across DCO.
+                  Latest updates and branch news from around DCO.
                 </p>
               </div>
               <div id="UpEventsHov" class="submenuCalloutContent">
                 <h3>Upcoming Events</h3>
                 <p>
-                  See upcoming DCO events here. (Will get more detail once we
-                  start populating)
+                  Upcoming events in the life of DCO.
                 </p>
               </div>
               <div id="DirMsgHov" class="submenuCalloutContent">
                 <h3>Director's Message</h3>
                 <p>
-                  John Miniaci, Director of DCO posts a monthly message to all
-                  staff here.
+                  A monthly message from the Director of DCO, John Miniaci.
                 </p>
               </div>
               <div id="NewsLettersHov" class="submenuCalloutContent">
                 <h3>DCO Download</h3>
                 <p>
-                  Online newsletter that features different topics each month to
-                  showcase the great work of DCO teams.
+                  A monthly newsletter featuring all the new and great work
+                  being done in the branch.
                 </p>
               </div>
               <div id="SpotlightHov" class="submenuCalloutContent">
@@ -263,8 +106,8 @@
               <div id="ShoutOutsHov" class="submenuCalloutContent">
                 <h3>Shout Outs</h3>
                 <p>
-                  See staff shouts outs here! Want to shout out a staff member
-                  for their excellent work? Contact nina.petkovic@ontario.ca
+                  A celebration and ‘shout out’ to staff members for their
+                  excellent work.
                 </p>
               </div>
             </div>
@@ -346,25 +189,19 @@
               <div id="ProductMgmtHov" class="submenuCalloutContent">
                 <h3>Product Management</h3>
                 <p>
-                  This innovative team will begin a journey to bring more
-                  visibility to existing DCO offerings, create product roadmaps,
-                  enrich existing products and launch new products.
+                  Product Management description.
                 </p>
               </div>
               <div id="BSHov" class="submenuCalloutContent">
                 <h3>Business Services</h3>
                 <p>
-                  Responsible to achieve financial and customer excellence for
-                  the Data Centre Operations branch.
+                  Business Services description.
                 </p>
               </div>
               <div id="PTAHov" class="submenuCalloutContent">
                 <h3>Process Tools and Automation</h3>
                 <p>
-                  The Process, Tools &amp; Automation Section of the Data Centre
-                  Operations Branch is generally a &quot;behind the scenes&quot;
-                  team. Most of the services they deliver for our Cluster
-                  partners are value-add but intended to be somewhat invisible.
+                  Process Tools and Automation description.
                 </p>
               </div>
               <div id="SDHov" class="submenuCalloutContent">
@@ -410,7 +247,10 @@
             <div class="ms-Grid-col ms-sm4 submenuCallout left-arrow">
               <div id="PowerBIReportHov" class="submenuCalloutContent">
                 <h3>Power BI Reports</h3>
-                <p>Power BI report description</p>
+                <p>
+                  A collection of data driven analytical reports and
+                  visualizations.
+                </p>
               </div>
             </div>
           </div>
@@ -447,8 +287,8 @@
               <div id="LandDAllHov" class="submenuCalloutContent">
                 <h3>Learning and Development Newsletter</h3>
                 <p>
-                  Click on newsletters to see L&D’s latest updates. More to come
-                  on the Learn tab, stay tuned!
+                  Monthly newsletter featuring latest news and updates in
+                  Learning and Development.
                 </p>
               </div>
             </div>
@@ -517,8 +357,7 @@
               <div id="ConnectIntelHov" class="submenuCalloutContent">
                 <h3>DCO Connect: Intel Sessions</h3>
                 <p>
-                  DCO Intel Sessions feature all the great work happening across
-                  the branch. It’s an opportunity to ‘show, tell, and learn’
+                  Intel Sessions are an opportunity to show and tell and learn
                   what your colleagues are actively engaged in.
                 </p>
               </div>
@@ -528,7 +367,10 @@
               </div>
               <div id="MyBoardHov" class="submenuCalloutContent">
                 <h3>My Board</h3>
-                <p>Display recent documents, contacts, SharePoint sites etc.</p>
+                <p>
+                  Recent documents, contacts and other information unique to
+                  you.
+                </p>
               </div>
             </div>
           </div>
@@ -614,9 +456,8 @@
               <div id="HowDoIHov" class="submenuCalloutContent">
                 <h3>FAQ</h3>
                 <p>
-                  Created to store all things DCO and employee related. Click
-                  through the various options on the front to see more
-                  information.
+                  A collection of relevant and Frequently Asked Questions by DCO
+                  employees.
                 </p>
               </div>
               <div id="HelpLinksHov" class="submenuCalloutContent">

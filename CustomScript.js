@@ -1,3 +1,5 @@
+"use strict";
+
 function TestLoad() {
   console.log("CustomScript file loaded");
 }
@@ -5,20 +7,19 @@ function TestLoad() {
 // Add event listener to all a elements with onmousehover attribute contains openCalloutContent value
 (function() {
   //get the a elements
-  let aLinks = document.querySelectorAll(
+  var aLinks = document.querySelectorAll(
     'a[onmouseover*="openCalloutContent"]'
-  );
-  // loop through them and add an event listener for mouseup event
-  aLinks.forEach(aLink => {
-    aLink.addEventListener("mouseup", handleMouseUp);
-  });
-})();
+  ); // loop through them and add an event listener for mouseup event
 
-// this function is called when mouseup event is triggered for a elements
+  for (var i = 0; i < aLinks.length; i++) {
+    aLinks[i].addEventListener("mouseup", handleMouseUp);
+  }
+})(); // this function is called when mouseup event is triggered for a elements
 // It then runs the function that toggles the display for mega menu content for that specific a element
+
 function handleMouseUp(event) {
   console.log(event.target);
-  let parent = getClosest(event.target, ".dropdown-content");
+  var parent = getClosest(event.target, ".dropdown-content");
   console.log(parent);
   toggleElementDisplay(parent);
 }
@@ -27,20 +28,20 @@ function handleMouseUp(event) {
  * Toggle element display after 100ms and bring it back after some time
  * @param element
  */
+
 function toggleElementDisplay(element) {
   // The first setTimeout method will run first and the next one after that
   // to bring back the mega menu content
-  setTimeout(() => {
+  setTimeout(function() {
     element.style.display === "none"
       ? (element.style.display = "")
       : (element.style.display = "none");
-  }, 75);
-
-  setTimeout(() => {
+  }, 100);
+  setTimeout(function() {
     element.style.display === "none"
       ? (element.style.display = "")
       : (element.style.display = "none");
-  }, 200);
+  }, 400);
 }
 
 /**
@@ -48,7 +49,8 @@ function toggleElementDisplay(element) {
  * @param elem
  * @param selector
  */
-var getClosest = function(elem, selector) {
+
+var getClosest = function getClosest(elem, selector) {
   // Element.matches() polyfill for
   // For Browser support
   if (!Element.prototype.matches) {
@@ -61,15 +63,17 @@ var getClosest = function(elem, selector) {
       function(s) {
         var matches = (this.document || this.ownerDocument).querySelectorAll(s),
           i = matches.length;
+
         while (--i >= 0 && matches.item(i) !== this) {}
+
         return i > -1;
       };
-  }
+  } // Get the closest matching element
 
-  // Get the closest matching element
   for (; elem && elem !== document; elem = elem.parentNode) {
     if (elem.matches(selector)) return elem;
   }
+
   return null;
 };
 
