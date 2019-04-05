@@ -425,6 +425,69 @@ h3.dcoTinyMceSectionSubHeader,
   padding: 5px;
   line-height: 1.3;
 }
+
+.dcoTinyMceLandingPageHeroContainer > div:first-child {
+  text-align: center;
+}
+
+.dcoTinyMceLandingPageHeroContainer > div:first-child > img {
+  width: 100%;
+}
+
+.dcoTinyMceLandingPageHeroContainer > div:first-child > img.staticHeight {
+  width: 100%;
+  min-height: 245px;
+  max-height: 245px;
+  object-fit: cover;
+}
+
+.dcoTinyMceLandingPageHeroContent {
+  padding: 0 25px !important;
+}
+
+.dcoTinyMceLandingPageHeroContentThreeSection {
+  margin-bottom: 30px;
+}
+.dcoTinyMceLandingPageHeroContentThreeSection .wpContent {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.dcoTinyMceLandingPageHeroContentThreeSection .wpContent h2 {
+  padding-top: 15px !important;
+}
+
+.dcoTinyMceLandingPageHeroContent > h2 {
+  padding-top: 15px;
+}
+
+.dcoTinyMceParagraphLink {
+  padding-bottom: 30px;
+  font-size: 0.9rem;
+  color: #0078d4;
+}
+
+.dcoTinyMceLandingPageParagraphContainer {
+  background-color: #efefef;
+}
+
+.dcoTinyMceLandingPageParagraphTitle {
+  padding-top: 15px;
+}
+
+.dcoTinyMceLandingPageParagraphWrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 24px !important;
+}
+
+.dcoTinyMceLandingPageParagraphWrapper .ms-Grid-row {
+  padding: 0 12px;
+}
+
+.dcoTinyMceLandingPageParagraphWrapper .ms-Grid-row .ms-Grid-col {
+  padding: 0 8px;
+}
 /* end of tinymce rich text editor  */
 
 #SuiteNavPlaceHolder {
